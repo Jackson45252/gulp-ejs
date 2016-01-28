@@ -1,0 +1,27 @@
+@charset "utf-8";
+// ============================================================
+// 設定
+// ============================================================
+
+
+// 標準font-family
+$fontFamily : 'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', Helvetica, verdana, Arial, sans-serif;
+
+// 標準テキストカラー
+$textColor : #333;
+
+// 標準リンクカラー
+$linkColor : #0000ee;
+$linkColor_visited : #551a8b;
+$linkColor_hover : #0000ee;
+$linkColor_active : #ff0000;
+
+// アクセントカラー
+$baseColor : #f0f0f0;
+
+// 画面サイズ
+$width : 1040px;
+
+//media-query用サイズ
+$maxWidth1 : 840px;
+$maxWidth2 : 640px;

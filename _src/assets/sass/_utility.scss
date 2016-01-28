@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*====================
+ *    - margin
+ *    - text font
+ *    - float clear clearfix
+ *====================*/
+/*--------------------
+ *    margin
+ *--------------------*/
+.u-mb0 {
+    margin-bottom: 0 !important;
+}
+.u-mb5 {
+    margin-bottom: 5px !important;
+}
+.u-mb10 {
+    margin-bottom: 10px !important;
+}
+.u-mb20 {
+    margin-bottom: 20px !important;
+}
+.u-mb40 {
+    margin-bottom: 40px !important;
+}
+.u-mb60 {
+    margin-bottom: 60px !important;
+}
+/*--------------------
+ *    text font
+ *--------------------*/
+.u-fwN {
+    font-weight: normal !important;
+}
+.u-fwB {
+    font-weight: bold !important;
+}
+.u-taR {
+    text-align: right !important;
+}
+.u-taL {
+    text-align: left !important;
+}
+.u-taC {
+    text-align: center !important;
+}
+/*--------------------
+ *    float
+ *--------------------*/
+.u-flL {
+    float: left !important;
+}
+.u-flR {
+    float: right !important;
+}
+/*--------------------
+ *    clear
+ *--------------------*/
+.u-clear {
+    clear: both !important;
+}
+/*--------------------
+ *    clearfix
+ *--------------------*/
+.u-clearfix {
+    @include clearfix;
+}

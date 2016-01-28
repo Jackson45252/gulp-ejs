@@ -1,0 +1,89 @@
+@charset "utf-8";
+// ============================================================
+// Tools
+// ============================================================
+
+// link
+@mixin basicLink($color) {
+    &:link,
+    &:visited {
+        color: $color;
+        text-decoration: underline;
+    }
+    &:hover,
+    &:active {
+        color: darken($color, 15%);
+        text-decoration: underline;
+    }
+}
+@mixin hoverlineLink($color) {
+    &:link,
+    &:visited {
+        color: $color;
+        text-decoration: none;
+    }
+    &:hover,
+    &:active {
+        color: darken($color, 15%);
+        text-decoration: underline;
+    }
+}
+@mixin noLineLink($color, $colorHover: $color) {
+    &:link,
+    &:visited {
+        color: $color;
+        text-decoration: none;
+    }
+    &:hover,
+    &:active {
+        color: darken($colorHover, 15%);
+        text-decoration: none;
+    }
+}
+
+// opacity
+@mixin opacity($value) {
+    $IEValue: $value*100;
+    opacity: $value;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+    filter: alpha(opacity=$IEValue);
+}
+
+// ------------------------------------------------------------
+// font-size
+// ------------------------------------------------------------
+@mixin fz($size: 16, $base: 16) {
+    font-size: $size + px;
+    font-size: ($size / $base) * 1rem;
+}
+
+// ------------------------------------------------------------
+// fullimage
+// ------------------------------------------------------------
+@mixin fullimage {
+    width: 100%;
+    height:  auto;
+    vertical-align: top;
+}
+
+// ------------------------------------------------------------
+// clearfix
+// ------------------------------------------------------------
+@mixin clearfix {
+    &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+// ------------------------------------------------------------
+// media-query
+// ------------------------------------------------------------
+@mixin mq($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<% var description = ""; %>
+<title>タイトル</title>
+<meta name="description" content="<%= description %>">
+
+<meta property="og:title" content="">
+<meta property="og:description" content="<%= description %>">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="">
+<meta property="og:image" content="/asset/images/og_image.png">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<%- include('_header') -%>
+
+<div class="content">
+    <p>Hello world.</p>
+</div><!-- // .content -->
+
+<%- include('_footer') -%>
+<%- include('_scripts') -%>
+</body>
+</html>

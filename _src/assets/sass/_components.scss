@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/*====================
+ *    - icon
+ *    - title
+ *    - btn
+ *    - fullimage
+ *    - box
+ *    - column
+ *    - media
+ *====================*/
+/*--------------------
+ *    icon
+ *--------------------*/
+//@import "icon";
+
+/*--------------------
+ *    title
+ *--------------------*/
+
+/*--------------------
+ *    btn
+ *--------------------*/
+.btn {
+    display: block;
+    max-width: 280px;
+    margin: 40px auto;
+    border: 1px solid #999;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all .3s;
+
+    @include noLineLink(#666);
+    &:hover,
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+/*--------------------
+ *    fullimage
+ *--------------------*/
+.fullimage {
+    @include fullimage;
+}
+
+/*--------------------
+ *    box
+ *--------------------*/
+.box {
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    @include mq($maxWidth2) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/*--------------------
+ *    column
+ *--------------------*/
+.row {
+    box-sizing: border-box;
+    @include clearfix;
+}
+.col--1 {
+    float: left;
+    width: 8.333%;
+    box-sizing: border-box;
+}
+.col--2 {
+    float: left;
+    width: 16.666%;
+    box-sizing: border-box;
+}
+.col--3 {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+.col--4 {
+    float: left;
+    width: 33.333%;
+    box-sizing: border-box;
+}
+.col--6 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.col--8 {
+    float: left;
+    width: 66.666%;
+    box-sizing: border-box;
+}
+.col--9 {
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+}
+.col--10 {
+    float: left;
+    width: 83.333%;
+    box-sizing: border-box;
+}
+
+/*--------------------
+ *    media
+ *--------------------*/
+.media {
+    display: table;
+    width: 100%;
+    @include mq($maxWidth2) {
+        display: block;
+        width: auto;
+    }
+}
+.media__box,
+.media__pic {
+    display: table-cell;
+    vertical-align: middle;
+    @include mq($maxWidth2) {
+        display: block;
+    }
+}

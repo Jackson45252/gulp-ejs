@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*!
+Theme Name:
+Theme URI:
+Author:
+Author URI:
+Description:
+Version: 1.0
+*/
+/*====================
+ *    [Settings] (_setting.scss)
+ *        - config, variables
+ *    [Tools] (_tools.scss)
+ *        - mixins
+ *    [Normalize] (_normalize.css)
+ *        - resets style
+ *    [Utility] (_utility.css)
+ *        - helper classes
+ *    [Base]
+ *        - HTML elements
+ *    [Components] (_componets.css)
+ *        - UI (btn, title)
+ *    [Blocks]
+ *        - Block parts
+ *====================*/
+@import "settings",
+"tools",
+"normalize",
+"utility";
+
+/*====================
+ *    Base
+ *====================*/
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+    @include fz(14);
+    color: $textColor;
+    line-height: 1.6;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+figure {
+    margin: 0;
+}
+textarea {
+    resize: vertical;
+}
+a {
+    @include basicLink($linkColor);
+}
+
+/*====================
+ *    Components
+ *====================*/
+@import "components";
+/*====================
+ *    Blocks
+ *    - header
+ *    - footer
+ *====================*/
+/*--------------------
+ *    header
+ *--------------------*/
+/*--------------------
+ *    footer
+ *--------------------*/
